@@ -1,74 +1,93 @@
 # OpenCV Motion Detection
 
-A simple real-time motion detection project built using Python, OpenCV, and Imutils.
+A simple real-time motion detection system using **Python, OpenCV, and a webcam**.
 
-## Features
+## 📌 Project Overview
 
-* Captures live video using a webcam
-* Detects movement by comparing video frames
-* Highlights detected motion with a green rectangle
-* Displays the status as **Normal** or **Motion Detected**
-* Uses Gaussian Blur and image thresholding for better detection
+This project detects movement from a live webcam feed by comparing the current video frame with a reference frame.
 
-## Technologies Used
+When significant movement is detected, the moving area is highlighted with a green rectangle and the status changes to **Motion Detected**.
+
+## ✨ Features
+
+* 🎥 Real-time webcam monitoring
+* 🔍 Motion detection using frame difference
+* 🖼️ Grayscale image processing
+* 🌫️ Gaussian Blur for noise reduction
+* 📦 Contour-based motion detection
+* 🟩 Bounding box around detected movement
+* ⚡ Simple and lightweight implementation
+
+## 🛠️ Technologies Used
 
 * Python
 * OpenCV
 * Imutils
 
-## How It Works
+## ⚙️ How It Works
 
-The program captures the first frame from the webcam and uses it as the reference frame.
-
-Each new frame is then:
-
-1. Converted to grayscale
-2. Smoothed using Gaussian Blur
-3. Compared with the first frame
-4. Thresholded to identify differences
-5. Dilated to improve the detected regions
-6. Analyzed using contours
-7. Marked with a rectangle when motion is detected
-
-## Installation
-
-Install the required libraries:
-
-```bash
-pip install opencv-python imutils
+```text
+Webcam
+   ↓
+Capture Frame
+   ↓
+Convert to Grayscale
+   ↓
+Gaussian Blur
+   ↓
+Compare with Reference Frame
+   ↓
+Thresholding
+   ↓
+Contour Detection
+   ↓
+Motion Detected
 ```
 
-Or:
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/harini020306/motion_detector_openCV.git
+cd motion_detector_openCV
+```
+
+Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run the Project
+## ▶️ Run the Project
 
 ```bash
-python motion_detection.py
+python motion_detector_OpenCV.py
 ```
 
-Allow the program to access your webcam.
+The webcam will open automatically.
 
-Press **Q** to stop the program.
+* **Normal** → No significant movement detected
+* **Motion Detected** → Movement detected
 
-## Output
+Press **Q** to exit the application.
 
-The webcam window displays:
+## 📷 Output
 
-* **Normal** – No significant movement detected
-* **Motion Detected** – Movement detected in the camera frame
+Add a screenshot of the webcam output here:
 
-## Future Improvements
+```text
+![Motion Detection Output](screenshot.png)
+```
 
-* Add motion detection timestamps
+## 🔮 Future Improvements
+
 * Save images when motion is detected
-* Add email or notification alerts
-* Detect and track multiple moving objects
-* Add person detection using AI/ML
+* Add motion detection alerts
+* Add email notifications
+* Detect and track multiple objects
+* Integrate AI-based person detection
 
-## Author
+## 👩‍💻 Author
 
-Harini K
+**Harini K**
