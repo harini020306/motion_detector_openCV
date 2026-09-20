@@ -88,6 +88,10 @@ Add a screenshot of the webcam output here:
 * Detect and track multiple objects
 * Integrate AI-based person detection
 
+## Output
+
+![Motion Detection Screenshot](screenshot.png)
+
 ## 👩‍💻 Author
 
 **Harini K**
